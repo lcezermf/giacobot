@@ -6,7 +6,9 @@ defmodule Giacobot.Endpoint do
   plug :dispatch
 
   get "/" do
-    send_resp(conn, 200, "ok")
+    conn
+    |> put_resp_content_type("text/html")
+    |> send_resp(200, Giacobot.say())
   end
 
   match _ do

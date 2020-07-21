@@ -1,4 +1,5 @@
-defmodule Giacobot do
+defmodule GiacobotTest do
+  use ExUnit.Case
 
   @phrases [
     "Ma ôme",
@@ -14,7 +15,11 @@ defmodule Giacobot do
     "Meu pau de rayban"
   ]
 
-  def say do
-    Enum.random(@phrases)
+  test "must contain the phrases" do
+    assert Enum.member?(@phrases, Giacobot.say())
+  end
+
+  test "must not contain the phrases" do
+    refute Enum.member?(["bom dia", "ola"], Giacobot.say())
   end
 end
