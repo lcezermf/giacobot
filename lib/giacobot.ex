@@ -1,8 +1,8 @@
 defmodule Giacobot do
 
   @phrases [
-    "Ma ôme",
-    "Meu zovo",
+    "Mazome",
+    "Meuzovo",
     "2 X-elefante no romário lanches",
     "Exemplo de cultura",
     "Seloco",
@@ -11,7 +11,8 @@ defmodule Giacobot do
     "TEU FIOTE",
     "SARTE LôCO",
     "Ainda bem que to na CIPA",
-    "Meu pau de rayban"
+    "Meu pau de rayban",
+    "Sarte nágua capivara"
   ]
 
   def say do
