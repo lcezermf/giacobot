@@ -1,3 +1,3 @@
 use Mix.Config
 
-config :giacobot, port: 80
+config :giacobot, port: 4000
