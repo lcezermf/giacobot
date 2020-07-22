@@ -1,25 +1,18 @@
 defmodule GiacobotTest do
   use ExUnit.Case
 
-  @phrases [
-    "Ma ôme",
-    "Meu zovo",
-    "2 X-elefante no romário lanches",
-    "Exemplo de cultura",
-    "Seloco",
-    "Lá em DV",
-    "TEU CU BURRO",
-    "TEU FIOTE",
-    "SARTE LôCO",
-    "Ainda bem que to na CIPA",
-    "Meu pau de rayban"
+  @valid_phrases [
+    "Mazome",
+    "Meuzovo",
+    "2 X-elefante no romário lanches"
   ]
+  @invalid_phrases ["bom dia", "ola"]
 
   test "must contain the phrases" do
-    assert Enum.member?(@phrases, Giacobot.say())
+    assert Enum.member?(@valid_phrases, Giacobot.say())
   end
 
   test "must not contain the phrases" do
-    refute Enum.member?(["bom dia", "ola"], Giacobot.say())
+    refute Enum.member?(@invalid_phrases, Giacobot.say())
   end
 end
