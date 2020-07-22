@@ -18,4 +18,6 @@ defmodule Giacobot do
   def say do
     Enum.random(@phrases)
   end
+
+  def phrases, do: @phrases
 end
