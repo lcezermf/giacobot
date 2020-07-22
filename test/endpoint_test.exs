@@ -8,12 +8,14 @@ defmodule Giacobot.EndpointTest do
     %{
       state: state,
       status: status,
+      resp_body: resp_body
     } =
       conn(:get, "/")
       |> Giacobot.Endpoint.call(@opts)
 
     assert state == :sent
     assert status == 200
+    assert resp_body =~ "Frase aleatório do Giacomini"
   end
 
   test "GET * returns 404" do
