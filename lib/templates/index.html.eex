@@ -1,16 +1,49 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
 <head>
-  <meta charset="utf-8">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="Frases do Giacomini">
+   <meta name="author" content="Luiz Cezer">
+   <title>Frases inteligentes do Giacomini</title>
+   <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <!-- Custom styles for this template -->
+   <style>
+     .container { margin-top: auto; margin-bottom: auto; }
+   </style>
+   <script>
+    function copyToClipboard() {
+      var element = document.getElementById("message");
+      var selection = window.getSelection();
+      var range = document.createRange();
 
-  <title>Frase aleatório do Giacomini</title>
-  <meta name="description" content="Giacobot">
-  <meta name="author" content="Luiz Cezer">
+      range.selectNodeContents(element);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      document.execCommand("Copy");
 
+      document.getElementById("feedback").textContent = "Frase '" + element.textContent + "' copiada, faça bom uso";
+    }
+   </script>
 </head>
-
-<body>
-  <%= message %>
+<body class="vsc-initialized">
+   <div class="container">
+      <div class="jumbotron">
+         <h3 class="display-3" contenteditable="true" spellcheckker="false" style="display: block; opacity: 1;" id="message"><%= message %></h3>
+         <p>
+           <button class="btn btn-success btn-sm" onclick="copyToClipboard()">
+             Copie essa frase
+           </button>
+         </p>
+      </div>
+      <footer class="footer">
+         <span id="feedback"></span>
+         <p>
+           <a target="_blank" href="http://github.com/lccezinha/giacobot">
+             http://github.lccezinha/giacobot
+           </a>
+         </p>
+      </footer>
+   </div>
 </body>
 </html>
