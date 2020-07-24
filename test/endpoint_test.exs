@@ -15,7 +15,7 @@ defmodule Giacobot.EndpointTest do
 
     assert state == :sent
     assert status == 200
-    assert resp_body =~ "Frase aleatório do Giacomini"
+    assert resp_body =~ "Frases inteligentes do Giacomini"
   end
 
   test "GET * returns 404" do
