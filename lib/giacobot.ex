@@ -13,6 +13,7 @@ defmodule Giacobot do
     "Ainda bem que to na CIPA",
     "Meu pau de rayban",
     "Sarte nágua capivara"
+    "Pedra no rim é o djanho"
   ]
 
   def say do
