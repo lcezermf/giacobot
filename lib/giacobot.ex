@@ -12,7 +12,7 @@ defmodule Giacobot do
     "SARTE LôCO",
     "Ainda bem que to na CIPA",
     "Meu pau de rayban",
-    "Sarte nágua capivara"
+    "Sarte nágua capivara",
     "Pedra no rim é o djanho"
   ]
 
