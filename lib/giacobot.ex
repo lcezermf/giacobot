@@ -16,9 +16,7 @@ defmodule Giacobot do
     "Pedra no rim é o djanho"
   ]
 
-  def say do
-    Enum.random(@phrases)
-  end
+  def say, do: Enum.random(@phrases)
 
   def phrases, do: @phrases
 end
