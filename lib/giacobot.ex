@@ -13,7 +13,8 @@ defmodule Giacobot do
     "Ainda bem que to na CIPA",
     "Meu pau de rayban",
     "Sarte nágua capivara",
-    "Pedra no rim é o djanho"
+    "Pedra no rim é o djanho",
+    "Va lá pastar, seu cavalo de teta"
   ]
 
   def say, do: Enum.random(@phrases)
