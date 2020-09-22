@@ -14,7 +14,8 @@ defmodule Giacobot do
     "Meu pau de rayban",
     "Sarte nágua capivara",
     "Pedra no rim é o djanho",
-    "Va lá pastar, seu cavalo de teta"
+    "Va lá pastar, seu cavalo de teta",
+    "Resmini muito tanso"
   ]
 
   def say, do: Enum.random(@phrases)
