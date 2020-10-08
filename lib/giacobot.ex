@@ -15,7 +15,8 @@ defmodule Giacobot do
     "Sarte nágua capivara",
     "Pedra no rim é o djanho",
     "Va lá pastar, seu cavalo de teta",
-    "Resmini muito tanso"
+    "Resmini muito tanso",
+    "em 2013 ganhei o Oscar mais guloso"
   ]
 
   def say, do: Enum.random(@phrases)
